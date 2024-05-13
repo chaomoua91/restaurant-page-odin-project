@@ -1,11 +1,8 @@
-import '../style.css';
-import background from '../img/paper-lanturns.jpg';
 
-console.log("hello world");
+console.log ("home page")
+import restaurantImage from './img/paper-lanturns.jpg';
 
-function loadHome() {
-    document.body.style.background = `url(${background})`
-    document.body.style.backgroundSize = "cover"
+export function homePage() {
 
     const contentDiv = document.querySelector("#content");
 
@@ -14,9 +11,16 @@ function loadHome() {
 
     // DOM for heading
     const heading = document.createElement("h1");
-    heading.textContent = "Welcome To Jaybees Tech Talk Restaurant And Lounge";
+    heading.textContent = "Welcome To Chuncky's";
     heading.classList.add("landing-title");
     contentDiv.appendChild(heading);
+
+    // DOM for landing page top image
+    const topImage = document.createElement("img");
+    topImage.classList.add("image");
+    topImage.src = restaurantImage;
+    topImage.alt = "Image of Restaurant";
+    contentDiv.appendChild(topImage);
 
     // DOM for p tag #1
     const para1 = document.createElement("p");
@@ -35,8 +39,4 @@ function loadHome() {
     para3.classList.add("landing-page-copy");
     para3.textContent = "Thanks, Management";
     contentDiv.appendChild(para3);
-  
-
-  }
-  
-  export default loadHome;
+}

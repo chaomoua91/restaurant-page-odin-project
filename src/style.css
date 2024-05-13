@@ -1,4 +1,5 @@
 body {
+    background-color:brown;
     
     margin: 0px;
     padding: 0px;
@@ -7,11 +8,11 @@ body {
 #content {
     min-height: 100vh;
     text-align: center;
-    color: white;
 }
 
 .image {
-    /* margin: 25px; */
+    margin: 25px;
+    height: 200px;
 }
 
 .landing-page-copy, .menu-copy, .contact-copy {
@@ -19,7 +20,6 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 900;
     font-style: italic;
-
 }
 
 header {
