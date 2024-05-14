@@ -1,6 +1,6 @@
 console.log("menu page")
-import multiThai from './img/multi-dishes-thai.jpg';
-import pho from './img/pho-with-teapot.jpg';
+import multiThaiImg from './img/multi-dishes-thai.jpg';
+import phoImg from './img/pho-with-teapot.jpg';
 
 export function menuPage() {
 
@@ -18,9 +18,11 @@ export function menuPage() {
     // DOM for multiThai
     const multiThai = document.createElement("img");
     multiThai.classList.add("image");
-    multiThai.src = multiThai;
+    multiThai.src = multiThaiImg;
     multiThai.alt = "Image of multiple thai dishes";
     contentDiv.appendChild(multiThai);
+
+    
 
     // DOM for p tag for multiThai
     const para1multiThai = document.createElement("p");
@@ -31,7 +33,7 @@ export function menuPage() {
     // DOM for pho
     const pho = document.createElement("img");
     pho.classList.add("image");
-    pho.src = pho;
+    pho.src = phoImg;
     pho.alt = "Image of pho and tea";
     contentDiv.appendChild(pho);
 
